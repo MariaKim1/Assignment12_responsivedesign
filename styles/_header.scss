@@ -5,9 +5,10 @@ header {
     max-width: 1440px;
     width: 100%;
     background-color: aqua;
-
     display: flex;
-    
+    justify-content: space-between;
+    align-items: center;
+
 
 }
 
@@ -18,9 +19,6 @@ header {
     padding: 0;
 }
 
-/*.header__nav {
-    
-}*/
 
 .header__nav__list {
     font-family: f.$font-p;
@@ -28,4 +26,11 @@ header {
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0px;
+    list-style-type: none;
+    display: flex;
+}
+
+.header__nav__item {
+    color: yellow;
+    padding: 20px;
 }
