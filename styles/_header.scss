@@ -1,0 +1,31 @@
+@use '../styles/fonts' as f;
+
+header {
+    max-height: 100px;
+    max-width: 1440px;
+    width: 100%;
+    background-color: aqua;
+
+    display: flex;
+    
+
+}
+
+.head-logo_desktop {
+    width: 90px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+/*.header__nav {
+    
+}*/
+
+.header__nav__list {
+    font-family: f.$font-p;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+}

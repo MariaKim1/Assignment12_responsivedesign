@@ -1,0 +1,12 @@
+@use 'fonts';
+@import 'header';
+@import 'main';
+
+body {
+    max-width: 1440px;
+    width: 100%;
+    min-height: auto;
+    margin: auto;
+    padding: none;
+    background-color: f.$background-white;
+}
