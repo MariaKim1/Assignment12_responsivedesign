@@ -1,12 +1,82 @@
-@use 'fonts';
-@import 'header';
-@import 'main';
+$font-h: 'Poppins', sans-serif;
+$font-p: 'Source Sans 3', sans-serif;
 
 body {
     max-width: 1440px;
     width: 100%;
     min-height: auto;
     margin: auto;
-    padding: none;
-    background-color: f.$background-white;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* ===== HEADER ====== */
+
+.main__head {
+    max-width: 864px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.head-logo_desktop {
+    width: 90px;
+    height: 36px;
+    margin: 0; 
+    padding: 0;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__nav__item {
+    color: rgba(36, 38, 53, 1);
+    padding: 20px;
+    font-family: $font-p;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-decoration: none;
+}
+
+/* ===== MAIN CONTENT ====== */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+h1 {
+    font-family: $font-h;
+    font-size: 90px;
+    font-weight: 500;
+    line-height: 102px;
+    letter-spacing: -2px;
+    text-align: center;
+}
+
+p {
+    font-family: $font-p;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.container__p {
+    max-width: 570px;
+    margin: auto;
+}
+
+.img_desktop {
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
