@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+3&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Baloo+2&family=Poppins:wght@500&family=Source+Sans+3&display=swap" rel="stylesheet">
     <title>MKP_ResponsiveDesign_Patagonia</title>
 </head>
 <body>
 
-<!-- HEADER -->
-    <header class="main__head">
-        <svg class="head-logo_desktop">
+<!--- HEADER --->
+    <header class="header__container">
+       <!-- <svg class="head-logo_desktop">
             <use xlink:href="images/head-logo_desktop.svg#head-logo_desktop" alt="Head logo desktop"></use>
-        </svg>
+        </svg> -->
+        <div class="header__logo">
+            <h2 class="logo__desktop">Head.</h2> 
+        </div>
         <div class="header__nav">
             <a class="header__nav__item" href="">Works</a>
             <a class="header__nav__item" href="">Services</a>
@@ -22,13 +25,21 @@
         </div>
     </header>
 
-<!-- MAIN -->
+<!--- MAIN --->
     <main>
         <h1>Patagonia</h1>
         <div class="container__p">
             <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcor.</p>
         </div>
-        <img class="img_desktop" src="images/patagonia_desktop.png" alt="Wild horses">
+        <div class="img__adaptive">
+            <picture>
+                <source class="img__adaptive__s" media="(max-width=320px)" srcset="images/patagonia_mobile.jpg">
+                <source class="img__adaptive__m" media="(max-width=768px)" srcset="images/patagonia_tablet.png">
+                <source class="img__adaptive__l" media="(max-width=1440px)" srcset="images/patagonia_desktop.png">
+                <img class="img__desktop__default" src="images/patagonia_desktop.png" alt="Wild horses">
+            </picture>
+        </div>
+
     </main>
 
 </body>
