@@ -94,8 +94,7 @@ p { /* --- Main text + nav list styling --- */
     margin: auto;
 }
 
-
-.img-adaptive, .img-adaptive__default__desktop {
+.img-adaptive__s, .img-adaptive__m, .img-adaptive__l, .img-adaptive__default-desktop {
     max-width: 100%;
     height: auto;
     margin-left: auto;
@@ -116,9 +115,6 @@ p { /* --- Main text + nav list styling --- */
   h1 {
     font-size: 72px;
   }
-  .header-nav__mobile {
-    display: none;
-  }
 }
 
 
@@ -126,9 +122,6 @@ p { /* --- Main text + nav list styling --- */
 @media screen and (min-width: 320px), (max-width: 479px) {
   h1 {
       font-size: 36px;
-  }
-  .__item {
-    display: none;
   }
 }
 

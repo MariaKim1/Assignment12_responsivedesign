@@ -36,11 +36,14 @@
         <div class="container-p">
             <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcor.</p>
         </div>
-        <div class="img-adaptive">
+      <!--  <div class="img-adaptive">
+            <img class="img-adaptive__desktop" src="images/patagonia_desktop.png" alt="Wild horses"> 
+        </div> -->
+        <div class="img-adaptive">   
             <picture>
-                <source class="img-adaptive__s" @media="(min-width=320px)" srcset="../images/patagonia_mobile.jpg">
-                <source class="img-adaptive__m" @media="(min-width=479px)" srcset="../images/patagonia_tablet.png">
-                <source class="img-adaptive__l" @media="(min-width=769px)" srcset="../images/patagonia_desktop.png">
+                <source class="img-adaptive__s" media="(min-width=320px)" srcset="./images/patagonia_mobile.jpg">
+                <source class="img-adaptive__m" media="(min-width=479px)" srcset="./images/patagonia_tablet.png">
+                <source class="img-adaptive__l" media="(min-width=768px)" srcset="./images/patagonia_desktop.png"> 
                 <img class="img-adaptive__default-desktop" src="images/patagonia_desktop.png" alt="Wild horses">
             </picture>
         </div>
