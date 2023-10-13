@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Baloo+2&family=Poppins:wght@500&family=Source+Sans+3&display=swap" rel="stylesheet">
+    <i class="fa-solid fa-ellipsis" style="color: #000000;"></i>
     <title>MKP_ResponsiveDesign_Patagonia</title>
 </head>
 <body>
@@ -19,6 +20,13 @@
             <a class="header-nav__item" href="#">Works</a>
             <a class="header-nav__item" href="#">Services</a>
             <a class="header-nav__item" href="#">Contacts</a>
+        <!--   
+            <a class="header-nav__mobile-link" href="#">
+                <svg class="header-nav__mobile-icon">
+                    <use xlink:href="../images/nav-icon-mobile.svg " alt="navigation bar"></use>
+                </svg>
+            </a>
+        --> 
         </div>
     </header>
 
@@ -30,9 +38,9 @@
         </div>
         <div class="img-adaptive">
             <picture>
-                <source class="img-adaptive__s" media="(max-width=320px)" srcset="images/patagonia_mobile.jpg">
-                <source class="img-adaptive__m" media="(max-width=768px)" srcset="images/patagonia_tablet.png">
-                <source class="img-adaptive__l" media="(max-width=1440px)" srcset="images/patagonia_desktop.png">
+                <source class="img-adaptive__s" @media="(min-width=320px)" srcset="../images/patagonia_mobile.jpg">
+                <source class="img-adaptive__m" @media="(min-width=479px)" srcset="../images/patagonia_tablet.png">
+                <source class="img-adaptive__l" @media="(min-width=769px)" srcset="../images/patagonia_desktop.png">
                 <img class="img-adaptive__default-desktop" src="images/patagonia_desktop.png" alt="Wild horses">
             </picture>
         </div>

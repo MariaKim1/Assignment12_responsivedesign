@@ -14,25 +14,6 @@ body {
     background-color: rgba(255, 255, 255, 1);
 }
 
-/* ====== MEDIA QUERYS - SCREEN START ====== */
-
-@media screen and (max-width: 768px) {
-    .logo__desktop {
-        font-family: 'Baloo 2', sans-serif;
-    }
-}
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: 72px;
-    }
-}
-@media screen and (max-width: 320px) {
-    h1 {
-        font-size: 36px;
-    }
-}
-
-/* ====== MEDIA QUERYS - SCREEN END ====== */
 
 /* ===== HEADER ====== */
 
@@ -121,3 +102,35 @@ p { /* --- Main text + nav list styling --- */
     margin-right: auto;
     overflow: hidden;
 }
+
+/* ====== MEDIA QUERYS - START ====== */
+/* Desktop screen - 769px-above (default) 
+@media screen and (min-width: 769px) {
+}*/
+
+/* TABLET SCREEN - 480px-768px */
+@media screen and (max-width: 768px) {
+  .header-logo__desktop {
+      font-family: 'Baloo 2', sans-serif;
+  }
+  h1 {
+    font-size: 72px;
+  }
+  .header-nav__mobile {
+    display: none;
+  }
+}
+
+
+/* Mobile screen - 320px-479px */
+@media screen and (min-width: 320px), (max-width: 479px) {
+  h1 {
+      font-size: 36px;
+  }
+  .__item {
+    display: none;
+  }
+}
+
+
+/* ====== MEDIA QUERYS - END ====== */
