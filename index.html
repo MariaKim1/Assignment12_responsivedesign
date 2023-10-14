@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Baloo+2&family=Poppins:wght@500&family=Source+Sans+3&display=swap" rel="stylesheet">
-    <i class="fa-solid fa-ellipsis" style="color: #000000;"></i>
+    <script src="https://kit.fontawesome.com/19b5078a53.js" crossorigin="anonymous"></script>
     <title>MKP_ResponsiveDesign_Patagonia</title>
 </head>
 <body>
@@ -20,30 +20,35 @@
             <a class="header-nav__item" href="#">Works</a>
             <a class="header-nav__item" href="#">Services</a>
             <a class="header-nav__item" href="#">Contacts</a>
-        <!--   
+        </div>
+       
+        <div class="header-nav__mobile">   
             <a class="header-nav__mobile-link" href="#">
-                <svg class="header-nav__mobile-icon">
-                    <use xlink:href="../images/nav-icon-mobile.svg " alt="navigation bar"></use>
-                </svg>
+                <i class="fa-solid fa-ellipsis"></i>
             </a>
-        --> 
         </div>
     </header>
 
 <!--- MAIN --->
     <main>
-        <h1>Patagonia</h1>
+        <h1 class="main-heading">Patagonia</h1>
         <div class="container-p">
             <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcor.</p>
         </div>
-      <!--  <div class="img-adaptive">
-            <img class="img-adaptive__desktop" src="images/patagonia_desktop.png" alt="Wild horses"> 
-        </div> -->
+
+<!-- QUESTION: Where am I going wrong?
+               I just can't get these images to swap. I have experimented with media queries, only max-width, only min-width, with both, 
+               tried src/srcset, different ways to write the link ./ ../ I am giving up on this.. 
+               
+               ALSO, the default image was completely responsive at one point - becoming larger and smaller as the screen width changed.
+               But when I finally got the mobile nav to pop upp and in the right place, somethig happened with the image that made it refuse 
+               to shrink making the mobile nav only visable when I forced the screen to shrink by using the inspection tool.. aaah! -->
+ 
         <div class="img-adaptive">   
             <picture>
-                <source class="img-adaptive__s" media="(min-width=320px)" srcset="./images/patagonia_mobile.jpg">
-                <source class="img-adaptive__m" media="(min-width=479px)" srcset="./images/patagonia_tablet.png">
-                <source class="img-adaptive__l" media="(min-width=768px)" srcset="./images/patagonia_desktop.png"> 
+                <source class="img-adaptive__s" media="(min-width=320px)" srcset="images/patagonia_mobile.jpg">
+                <source class="img-adaptive__m" media="(min-width=479px)" srcset="images/patagonia_tablet.png">
+                <source class="img-adaptive__l" media="(min-width=768px)" srcset="images/patagonia_desktop.png"> 
                 <img class="img-adaptive__default-desktop" src="images/patagonia_desktop.png" alt="Wild horses">
             </picture>
         </div>
