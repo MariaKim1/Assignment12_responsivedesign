@@ -44,11 +44,11 @@
                But when I finally got the mobile nav to pop upp and in the right place, somethig happened with the image that made it refuse 
                to shrink making the mobile nav only visable when I forced the screen to shrink by using the inspection tool.. aaah! -->
  
-        <div class="img-adaptive">   
-            <picture>
-                <source class="img-adaptive__s" media="(min-width=320px)" srcset="images/patagonia_mobile.jpg">
-                <source class="img-adaptive__m" media="(min-width=479px)" srcset="images/patagonia_tablet.png">
-                <source class="img-adaptive__l" media="(min-width=768px)" srcset="images/patagonia_desktop.png"> 
+        <div>   
+            <picture class="img-adaptive">
+                <source class="img-adaptive__l" media="(min-width=1000px)" srcset="images/patagonia_desktop.png" type="image/png"> 
+                <source class="img-adaptive__m" media="(min-width=800px)" srcset="images/patagonia_tablet.png" type="image/png">
+                <source class="img-adaptive__s" media="(min-width=800px)" srcset="images/patagonia_mobile.jpg" type="image/jpg">
                 <img class="img-adaptive__default-desktop" src="images/patagonia_desktop.png" alt="Wild horses">
             </picture>
         </div>
